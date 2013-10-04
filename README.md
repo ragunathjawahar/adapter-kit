@@ -2,9 +2,10 @@ Adapter Kit
 ===========
 ![Logo](logo.png)
 
-*Adapter Kit* is a set of useful adapters for Android. The kit currently includes,
+Adapter Kit is a set of useful adapters for Android. The kit currently includes,
 
  - Instant Adapter
+ - Instant Cursor Adapter
  - Simple Section Adapter
  - Circular List Adapter
 
@@ -25,3 +26,4 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
+<sub>Adapter Kit Logo © 2013, Mobs & Geeks.</sub>
