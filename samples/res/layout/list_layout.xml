@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wool Omnibus Edition"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bookAuthorName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Hugh Howey"
+        android:textSize="15sp" />
+
+</LinearLayout>
