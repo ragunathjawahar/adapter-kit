@@ -11,7 +11,7 @@
     <groupId>com.mobsandgeeks</groupId>
     <artifactId>adapter-kit</artifactId>
     <packaging>jar</packaging>
-    <version>0.5.2-SNAPSHOT</version>
+    <version>0.5.3-SNAPSHOT</version>
 
     <name>Adapter Kit</name>
     <description>A set of useful adapters for Android</description>
@@ -66,7 +66,6 @@
         <maven.javadoc.plugin>2.9.1</maven.javadoc.plugin>
         <maven.source.plugin>2.2.1</maven.source.plugin>
         <maven.release.plugin>2.2.2</maven.release.plugin>
-        <maven.scm.plugin>1.8.1</maven.scm.plugin>
     </properties>
 
     <dependencies>
@@ -137,11 +136,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>${maven.release.plugin}</version>
-                <dependencies>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-scm-plugin</artifactId>
-                    <version>${maven.scm.plugin}</version>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
