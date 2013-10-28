@@ -65,6 +65,8 @@
         <maven.gpg.plugin>1.4</maven.gpg.plugin>
         <maven.javadoc.plugin>2.9.1</maven.javadoc.plugin>
         <maven.source.plugin>2.2.1</maven.source.plugin>
+        <maven.release.plugin>2.2.2</maven.release.plugin>
+        <maven.scm.plugin>1.8.1</maven.scm.plugin>
     </properties>
 
     <dependencies>
@@ -103,14 +105,14 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>${maven.gpg.plugin}</version>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven.source.plugin}</version>
                 <executions>
                     <execution>
-                        <id>sign-artifacts</id>
+                        <id>attach-source</id>
                         <phase>verify</phase>
                         <goals>
-                            <goal>sign</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -130,6 +132,16 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven.release.plugin}</version>
+                <dependencies>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>${maven.scm.plugin}</version>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
