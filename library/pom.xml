@@ -11,7 +11,7 @@
     <groupId>com.mobsandgeeks</groupId>
     <artifactId>adapter-kit</artifactId>
     <packaging>jar</packaging>
-    <version>0.5.3</version>
+    <version>0.5.4-SNAPSHOT</version>
 
     <name>Adapter Kit</name>
     <description>A set of useful adapters for Android</description>
