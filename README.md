@@ -9,6 +9,20 @@ Adapter Kit is a set of useful adapters for Android. The kit currently includes,
  - Simple Section Adapter
  - Circular List Adapter
 
+Maven
+---------------------
+    <dependency>
+        <groupId>com.mobsandgeeks</groupId>
+        <artifactId>adapter-kit</artifactId>
+        <version>0.5.3</version>
+    </dependency>
+
+Gradle
+---------------------
+    dependencies {
+        compile 'com.mobsandgeeks:adapter-kit:0.5.3'
+    }
+
 License
 -------
 
