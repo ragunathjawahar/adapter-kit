@@ -41,3 +41,7 @@ License
     limitations under the License.
 
 <sub>Adapter Kit Logo © 2013, Mobs & Geeks.</sub>
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mobsandgeeks/adapter-kit/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
