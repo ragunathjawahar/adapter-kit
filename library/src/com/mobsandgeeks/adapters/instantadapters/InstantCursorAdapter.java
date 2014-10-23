@@ -12,7 +12,8 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.instantadapters;
+
 
 import android.content.Context;
 import android.database.Cursor;

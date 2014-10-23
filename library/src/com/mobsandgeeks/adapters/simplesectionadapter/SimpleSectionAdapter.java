@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.simplesectionadapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -202,7 +202,8 @@ public class SimpleSectionAdapter<T> extends BaseAdapter {
         mSections.clear();
 
         for(int i=0; i<n; i++) {
-            String sectionName = mSectionizer.getSectionTitleForItem((T) mListAdapter.getItem(i));
+            @SuppressWarnings("unchecked")
+			String sectionName = mSectionizer.getSectionTitleForItem((T) mListAdapter.getItem(i));
 
             if(!mSections.containsKey(sectionName)) {
                 mSections.put(sectionName, i + nSections);

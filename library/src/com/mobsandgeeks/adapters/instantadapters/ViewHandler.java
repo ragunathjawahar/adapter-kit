@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.instantadapters;
 
 import android.view.View;
 import android.widget.GridView;

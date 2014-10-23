@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.simplesectionadapter;
 
 /**
  * Interface provides mechanism for supplying titles for instances based on the property they are 
