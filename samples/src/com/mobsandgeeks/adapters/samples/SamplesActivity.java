@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Mobs & Geeks
+ * Copyright Â© 2013 Mobs & Geeks
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,8 +58,24 @@ public class SamplesActivity extends Activity {
 						new TabListener<CircularListFragment>(this,
 								"circular_list", CircularListFragment.class));
 		actionBar.addTab(tab3);
+
+		Tab tab4 = actionBar
+				.newTab()
+				.setText("Unlimited grid cards list")
+				.setTabListener(
+						new TabListener<GridListAdapterSampleFragment>(this,
+								"grid_adapter_demo",
+								GridListAdapterSampleFragment.class));
+		actionBar.addTab(tab4);
+
+		Tab tab5 = actionBar
+				.newTab()
+				.setText("Easy multi-row-type List")
+				.setTabListener(
+						new TabListener<EasyListAdapterSampleFragment>(this,
+								"easy_adapter_demo",
+								EasyListAdapterSampleFragment.class));
+		actionBar.addTab(tab5);
 	}
-
-
 
 }

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.mobsandgeeks.adapters.InstantAdapter;
+import com.mobsandgeeks.adapters.instantadapters.InstantAdapter;
 
 /**
  * Shows simple listview based on {@link InstantAdapter}

@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.mobsandgeeks.adapters.InstantAdapter;
-import com.mobsandgeeks.adapters.Sectionizer;
-import com.mobsandgeeks.adapters.SimpleSectionAdapter;
+import com.mobsandgeeks.adapters.instantadapters.InstantAdapter;
+import com.mobsandgeeks.adapters.simplesectionadapter.Sectionizer;
+import com.mobsandgeeks.adapters.simplesectionadapter.SimpleSectionAdapter;
 
 /**
  * ListView based on {@link SimpleSectionAdapter}

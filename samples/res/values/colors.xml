@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="simplest_card_color">#6CE6D7</color>
+    <color name="simplest_list_background">#586AC4</color>
+    <color name="simplest_card_txt_background">#32586AC4</color>
+    <color name="simplest_header_footer_color">#F2E24E</color>
+
+</resources>

@@ -1,6 +1,6 @@
 package com.mobsandgeeks.adapters.samples;
 
-import com.mobsandgeeks.adapters.InstantText;
+import com.mobsandgeeks.adapters.instantadapters.InstantText;
 
 public class Book {
 	private String bookName;

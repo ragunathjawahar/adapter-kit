@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.instantadapters;
 
 import android.content.Context;
 import android.view.View;
@@ -21,6 +21,7 @@ import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 
 import java.util.List;
+
 
 /**
  * Class that constructs a custom {@link Adapter} by mapping <b>Instant*</b> annotated

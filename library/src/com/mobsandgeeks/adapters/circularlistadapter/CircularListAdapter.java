@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.circularlistadapter;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +29,7 @@ import android.widget.ListView;
  * @version 0.1
  */
 public class CircularListAdapter extends BaseAdapter {
-    // Debug
+    // Debug 
     static final boolean DEBUG = false;
     static final String TAG = CircularListAdapter.class.getSimpleName();
     

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.instantadapters;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

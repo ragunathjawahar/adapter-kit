@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package com.mobsandgeeks.adapters;
+package com.mobsandgeeks.adapters.instantadapters;
 
 import android.content.Context;
 import android.text.Html;
@@ -34,6 +34,7 @@ import java.text.SimpleDateFormat;
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
+
 
 /**
  * {@link InstantAdapterCore} does all the heavy lifting behind the scenes for
@@ -115,7 +116,8 @@ class InstantAdapterCore<T> {
      */
     public final void bindToView(final ViewGroup parent, final View view,
             final T instance, final int position) {
-        SparseArray<Holder> holders = (SparseArray<Holder>) view.getTag(mLayoutResourceId);
+        @SuppressWarnings("unchecked")
+		SparseArray<Holder> holders = (SparseArray<Holder>) view.getTag(mLayoutResourceId);
         updateAnnotatedViews(holders, view, instance, position);
         executeViewHandlers(holders, parent, view, instance, position);
     }

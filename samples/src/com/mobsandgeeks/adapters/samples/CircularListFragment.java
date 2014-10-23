@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.mobsandgeeks.adapters.CircularListAdapter;
-import com.mobsandgeeks.adapters.InstantAdapter;
+import com.mobsandgeeks.adapters.circularlistadapter.CircularListAdapter;
+import com.mobsandgeeks.adapters.instantadapters.InstantAdapter;
 
 /**
  * ListView based on {@link CircularListAdapter}
