@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Mobs & Geeks
+ * Copyright ï¿½ 2013 Mobs & Geeks
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,6 +58,14 @@ public class SamplesActivity extends Activity {
 						new TabListener<CircularListFragment>(this,
 								"circular_list", CircularListFragment.class));
 		actionBar.addTab(tab3);
+
+        Tab tab4 = actionBar
+                .newTab()
+                .setText("Image List")
+                .setTabListener(
+                        new TabListener<ImageListFragment>(this,
+                                "image_list", ImageListFragment.class));
+        actionBar.addTab(tab4);
 	}
 
 
