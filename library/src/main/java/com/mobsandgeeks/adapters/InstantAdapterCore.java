@@ -15,6 +15,7 @@
 package com.mobsandgeeks.adapters;
 
 import android.content.Context;
+import android.media.Image;
 import android.text.Html;
 import android.util.Log;
 import android.util.SparseArray;
@@ -23,8 +24,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
@@ -259,6 +263,8 @@ class InstantAdapterCore<T> {
                     Meta meta = new Meta(annotation, method);
                     if (annotation instanceof InstantText) {
                         mViewIdsAndMetaCache.append(((InstantText) annotation).viewId(), meta);
+                    } else if (annotation instanceof InstantImage) {
+                        mViewIdsAndMetaCache.append(((InstantImage) annotation).viewId(), meta);
                     }
                 }
             }
@@ -266,7 +272,7 @@ class InstantAdapterCore<T> {
     }
 
     private boolean isInstantAnnotation(final Annotation annotation) {
-        return annotation.annotationType().equals(InstantText.class);
+        return annotation.annotationType().equals(InstantText.class) || annotation.annotationType().equals(InstantImage.class);
     }
 
     private void assertMethodIsPublic(final Method method) {
@@ -316,6 +322,8 @@ class InstantAdapterCore<T> {
             Class<? extends View> viewType = holder.view.getClass();
             if (TextView.class.isAssignableFrom(viewType)) {
                 updateTextView(holder, returnValue);
+            } else if (ImageView.class.isAssignableFrom(viewType)) {
+                updateImageView(holder, returnValue);
             }
 
             // Evaluators for child views
@@ -363,6 +371,13 @@ class InstantAdapterCore<T> {
         }
 
         textView.setText(instantText.isHtml() ? Html.fromHtml(text) : text);
+    }
+
+    private void updateImageView(final Holder holder, final Object returnValue) {
+        InstantImage instantImage = (InstantImage) holder.meta.annotation;
+        ImageView textView = (ImageView) holder.view;
+
+        Picasso.with(mContext).load(returnValue.toString()).into(textView);
     }
 
     private String applyDatePattern(final int viewId, final InstantText instantText,
